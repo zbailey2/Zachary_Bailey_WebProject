@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Resources</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+    <!-- Header section with the main title of the tutorial website -->
+    <header>
+        <h1>Web Development Tutorial</h1>
+    </header>
+
+    <!-- Navigation bar with links to different sections of the website -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="htmlbasics.html">HTML Basics</a></li>
+            <li><a href="cssbasics.html">CSS Basics</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <img src="images/codingStockPhoto.jpg" alt="Hero Image">
+    </div>
+
+    <!-- Introductory section to resources page -->
+    <section class="hero-intro">
+        <h2>Welcome to the Web Development Resources Page</h2>
+        <p>Here, you'll find the best tutorials, forums, and tools to help you improve your web development skills.</p>
+    </section>
+
+    <main class="resources-layout">
+        <!-- About Me Section -->
+        <div class="about-us">
+            <div class="about-box">About Me</div>
+            <p>Hi, I am Zachary, a 19-year-old sophomore majoring in computer science. I am creating this website to
+                further develop my knowledge of CSS and HTML, as well as completing it for a project in my intro to web
+                development class. I am developing this website as I learn, so hopefully as time goes on, the website
+                becomes more polished and clean! My main goal for this website is to help others learn HTML and CSS as I
+                began to learn them. With this in mind, I hope that individuals who use my website will soon be able to
+                create one of their own!</p>
+
+            <!-- Details Section -->
+            <h3 class="details">Details</h3>
+            <ul>
+                <li><strong>Name:</strong> Zachary Bailey</li>
+                <li><strong>Email:</strong> zbailey2@my.westga.edu</li>
+                <li><strong>Class:</strong> Intro to Web Development</li>
+            </ul>
+        </div>
+
+        <!-- Image Section with a centered image -->
+        <div class="center-image">
+            <div class="image-box">
+                <img src="images/contactusStockPhoto.png" alt="A stock photo of a man holding a business card">
+            </div>
+        </div>
+
+        <!-- Resources Section listing various resources for web development -->
+        <div class="resources-list">
+            <div class="resources-box">Resources</div>
+
+            <!-- Tutorials Category -->
+            <h2>Tutorials</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a> - A popular website for
+                    tutorials on web development technologies, covering HTML, CSS, JavaScript, and more.</li>
+                <li><a href="https://www.youtube.com/results?search_query=css+and+html+tutorial+for+beginners+"
+                        target="_blank">YouTube Tutorials</a> - Video tutorials for learning HTML and CSS, from beginner
+                    to advanced levels.</li>
+            </ul>
+
+            <!-- Forums Category -->
+            <h2>Forums & Communities</h2>
+            <ul>
+                <li><a href="https://stackoverflow.com/" target="_blank">StackOverflow</a> - A Q&A platform for
+                    developers to ask questions and share knowledge.</li>
+                <li><a href="https://www.reddit.com/r/webdev/" target="_blank">Reddit Web Development Community</a> - A
+                    subreddit where web developers can discuss trends, share resources, and seek advice.</li>
+            </ul>
+
+            <!-- Tools Category -->
+            <h2>Developer Tools</h2>
+            <ul>
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a> - A platform to write HTML, CSS, and
+                    JavaScript code online and share your work.</li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a> - A site dedicated to tips, tricks,
+                    and techniques for using CSS effectively.</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Contact Form Section -->
+    <section class="feedback">
+        <h2 id="feedback">I Value Your Feedback</h2>
+        <p>How can I improve this website:</p>
+
+        <!-- This is a form with the fieldset and legend for accessibility -->
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <!-- Provides a name label for this form element-->
+                <label for="name">Name:</label>
+
+                <!-- This is the input type for the name-->
+                <input type="text" name="Name" id="name" tabindex="1" required>
+
+                <!-- Provides a email label for this form element-->
+                <label for="email">Email:</label>
+
+                <!-- This is the input type for the email-->
+                <input type="email" name="Email" id="email" tabindex="2" required>
+
+                <!-- Provides a feedback label for this form element-->
+                <label for="comments">Feedback:</label>
+
+                <!-- This is the input type for the feedback aka comment-->
+                <textarea id="comments" name="Feedback" tabindex="3" required></textarea>
+
+                <!-- This is the submit button for the form-->
+                <input id=mySubmit type="submit" value="Submit Feedback">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Footer section with the company logo and copyright information -->
+    <footer>
+        <div class="logo">
+            <!-- Company logo image -->
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Zachary Bailey Intro to Web Development Project</p>
+    </footer>
+
+</body>
+
+</html>

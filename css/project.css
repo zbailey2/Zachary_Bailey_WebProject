@@ -1,0 +1,502 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Header and Footer Styles */
+header,
+footer {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Logo Styling*/
+.logo {
+    margin-right: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2980b9;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Main Container Styles */
+main {
+    padding: 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Section Layout Styles */
+.intro,
+.content,
+.columns,
+.practice-container,
+.resources-layout,
+.lesson-layout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/* Content Box Styles */
+.intro .text,
+.intro .image,
+.bullet-points,
+.side-content,
+.lesson-content,
+.lesson-example,
+.about-us,
+.center-image,
+.resources-list {
+    width: 48%;
+    height: auto;
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styles */
+.intro img,
+.hero img,
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Column and Box Styles */
+.column,
+.about-box,
+.resources-box,
+.lesson-heading,
+.lesson-subheading,
+.example-box,
+.question-column,
+.question-box,
+.box {
+    background-color: #bdc3c7;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* List and Link Styles */
+.column ul li,
+.resources-list ul li,
+.answers-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.column ul li a,
+.resources-list ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.column ul li a:hover,
+.resources-list ul li a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Hero Image Styles */
+.hero img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Question Container Styles */
+.questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.question-row {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #dfe6e9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Hero Intro Title Styles */
+.hero-intro {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.hero-intro h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Center Image Styles */
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.center-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section Styles */
+.about-us {
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Code Block Styles */
+pre {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code {
+    text-align: left;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table h2 {
+    text-align: center;
+}
+
+/*Form Styling for Feedback*/
+.feedback {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.feedback h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feedback p {
+    text-align: center;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback input[type="text"],
+.feedback input[type="email"],
+.feedback textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.feedback input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.feedback input[type="text"]:focus,
+.feedback input[type="email"]:focus,
+.feedback textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.25);
+}
+
+.feedback input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 3px 2px rgba(0, 123, 255, 0.25);
+}
+
+
+/* Media Queries */
+/* Small Screen Devices*/
+@media only screen and (max-width: 600px) {
+
+    header,
+    footer {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .intro,
+    .content,
+    .columns,
+    .practice-container,
+    .resources-layout,
+    .lesson-layout {
+        flex-direction: column;
+    }
+
+    .intro .text,
+    .intro .image,
+    .bullet-points,
+    .side-content,
+    .lesson-content,
+    .lesson-example,
+    .about-us,
+    .center-image,
+    .resources-list {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+    }
+
+    .questions-container {
+        padding: 10px;
+    }
+
+    .question-row {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+}
+
+/* Medium Screen Devices*/
+@media only screen and (max-width: 900px) {
+
+    header,
+    footer {
+        font-size: 1.7rem;
+    }
+
+    .intro,
+    .content,
+    .columns,
+    .practice-container,
+    .resources-layout,
+    .lesson-layout {
+        flex-direction: column;
+    }
+
+    .intro .text,
+    .intro .image,
+    .bullet-points,
+    .side-content,
+    .lesson-content,
+    .lesson-example,
+    .about-us,
+    .center-image,
+    .resources-list {
+        width: calc(100% - 20px);
+    }
+
+    .questions-container {
+        padding: 15px;
+    }
+
+    .question-row {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    th {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Screen Devices (Desktops) */
+@media only screen and (min-width: 901px) {
+    main {
+        padding: 50px;
+    }
+
+    .intro,
+    .content,
+    .columns,
+    .practice-container,
+    .resources-layout,
+    .lesson-layout {
+        flex-direction: row;
+    }
+
+    .intro .text,
+    .intro .image,
+    .bullet-points,
+    .side-content,
+    .lesson-content,
+    .lesson-example,
+    .about-us,
+    .center-image,
+    .resources-list {
+        width: 48%;
+    }
+}

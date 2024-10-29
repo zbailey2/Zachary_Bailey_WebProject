@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Lesson: CSS Organization</title>
+
+    <!-- Link to external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+    <!-- Header section with the main heading of the website -->
+    <header>
+        <h1>Web Development Tutorial</h1>
+    </header>
+
+    <!-- Navigation bar with links to different sections of the tutorial website -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="htmlbasics.html">HTML Basics</a></li>
+            <li><a href="cssbasics.html">CSS Basics</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area for the CSS organization lesson -->
+    <main class="lesson-layout">
+        <div class="lesson-content">
+
+            <!-- Main heading introducing the concept of CSS organization -->
+            <h2 class="lesson-heading">Organization for CSS</h2>
+
+            <!-- Paragraph explaining the importance of organizing CSS -->
+            <p>Organizing your CSS is very important for maintaining clean and efficient code that is easy to read and
+                manage. A
+                well-organized stylesheet can improve your progress and make reading and organzing your code easier.</p>
+
+            <!-- Subheading providing more details on CSS organization best practices -->
+            <h3 class="lesson-subheading">Best Practices for CSS Organization</h3>
+
+            <!-- List of best practices for CSS organization -->
+            <p>Here are some best practices to follow when organizing your CSS:</p>
+            <ul>
+                <li><strong>Consistent Naming Conventions:</strong> Use meaningful and consistent naming conventions for
+                    classes and IDs to improve clarity.</li>
+                <li><strong>Group Related Styles:</strong> Organize CSS rules by grouping related styles together (e.g.,
+                    layout, colors, purposes).</li>
+                <li><strong>Comment Your Code:</strong> Use comments to describe sections of your stylesheet, which
+                    helps in understanding the purpose of styles at a glance.</li>
+                <li><strong>Maintain a Good Structure:</strong> Structure your stylesheets in a logical order,
+                    so that it is easier to isolate issues with your css, or improve thins in your CSS.</li>
+            </ul>
+        </div>
+
+        <!-- Example section demonstrating CSS organization -->
+        <div class="lesson-example">
+            <!-- Example title -->
+            <h4 class="example-box">Example of Organized CSS</h4>
+
+            <!-- Example description explaining what the CSS code does -->
+            <p class="example-description">
+                Below is an example demonstrating how to organize CSS for a simple webpage:
+            </p>
+
+            <!-- Preformatted code block showing organized CSS -->
+            <pre>
+<code>
+/* Reseting styles for pages */
+/* Reset margins, paddings, and use border-box model for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Design */
+/* Setting font family and line height for body, and text color for headings */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Layout */
+/* Basic layout styling for header and footer */
+.header, .footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* A Button On The Webpage */
+/* Styling for a button component */
+.button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Class that helps within multiple different webpages */
+/* A class for centering text */
+.text-center {
+    text-align: center;
+}
+</code>
+            </pre>
+
+            <!-- Explanation of the CSS organization -->
+            <p>This example shows a organized approach to CSS, making it easier to navigate and
+                maintain.</p>
+        </div>
+    </main>
+
+    <!-- Footer section with company logo and copyright information -->
+    <footer>
+        <div class="logo">
+            <!-- Company logo image -->
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+
+        <!-- Copyright information -->
+        <p>&copy; 2024 Zachary Bailey Intro to Web Development Project</p>
+    </footer>
+</body>
+
+</html>
