@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Practice HTML basics with these interactive questions on interactivity using elements in HTML. Test your knowledge on questions about using videos, images, and more in HTML.">
+    <meta name="description"
+        content="Practice HTML basics with these interactive questions on interactivity using elements in HTML. Test your knowledge on questions about using videos, images, and more in HTML.">
 
 
     <!-- Title of the webpage -->
@@ -37,10 +38,26 @@
             <article class="question-column">
                 <h2 class="question-box">Question 1: Which tag is used to embed an image?</h2>
                 <ul class="answers-list">
-                    <li>&lt;img&gt;</li>
-                    <li>&lt;picture&gt;</li>
-                    <li>&lt;image&gt;</li>
-                    <li>&lt;src&gt;</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="correct1"> &lt;img&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect1"> &lt;picture&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect2"> &lt;image&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect3"> &lt;src&gt;
+                        </label>
+                    </li>
                 </ul>
             </article>
 
@@ -48,10 +65,26 @@
             <article class="question-column">
                 <h2 class="question-box">Question 2: What attribute is required for the &lt;img&gt; tag?</h2>
                 <ul class="answers-list">
-                    <li>src</li>
-                    <li>href</li>
-                    <li>alt</li>
-                    <li>title</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="correct2"> src
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect4"> href
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect5"> alt
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect6"> title
+                        </label>
+                    </li>
                 </ul>
             </article>
 
@@ -59,14 +92,88 @@
             <article class="question-column">
                 <h2 class="question-box">Question 3: Which tag is used for video content?</h2>
                 <ul class="answers-list">
-                    <li>&lt;movie&gt;</li>
-                    <li>&lt;video&gt;</li>
-                    <li>&lt;media&gt;</li>
-                    <li>&lt;clip&gt;</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect7"> &lt;movie&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="correct3"> &lt;video&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect8"> &lt;media&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect9"> &lt;clip&gt;
+                        </label>
+                    </li>
                 </ul>
             </article>
         </div>
+        <button onClick="checkAnswer()">Submit</button>
     </main>
+
+    <script>
+        function checkAnswer() {
+            //Checks all labels for the radio buttons
+            const labels = document.querySelectorAll("label");
+            labels.forEach(label => {
+                label.style.color = "";
+            });
+
+
+            var score = 0;
+            //Checks selection for Question 1
+            if (document.getElementById('correct1').checked) {
+                document.getElementById('correct1').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect1').checked) {
+                    document.getElementById('incorrect1').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect2').checked) {
+                    document.getElementById('incorrect2').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect3').checked) {
+                    document.getElementById('incorrect3').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 2
+            if (document.getElementById('correct2').checked) {
+                document.getElementById('correct2').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect4').checked) {
+                    document.getElementById('incorrect4').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect5').checked) {
+                    document.getElementById('incorrect5').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect6').checked) {
+                    document.getElementById('incorrect6').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 3
+            if (document.getElementById('correct3').checked) {
+                document.getElementById('correct3').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect7').checked) {
+                    document.getElementById('incorrect7').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect8').checked) {
+                    document.getElementById('incorrect8').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect9').checked) {
+                    document.getElementById('incorrect9').parentElement.style.color = "red";
+                }
+            }
+        }
+    </script>
 
     <!-- Footer section with the company logo and copyright information -->
     <footer>

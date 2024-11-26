@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Practice HTML basics with these interactive questions aimed towards beginners. Many industry standard questions on the best practices of how to setup and structure HTML code.">
+    <meta name="description"
+        content="Practice HTML basics with these interactive questions aimed towards beginners. Many industry standard questions on the best practices of how to setup and structure HTML code.">
 
 
     <!-- Title of the webpage -->
@@ -38,10 +39,26 @@
             <article class="question-column">
                 <h2 class="question-box">Question 1: What does HTML stand for?</h2>
                 <ul class="answers-list">
-                    <li>HyperText Markup Language</li>
-                    <li>HighText Machine Language</li>
-                    <li>HyperText Markup Logic</li>
-                    <li>HighText Markup Language</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="correct1"> HyperText Markup Language
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect1"> HighText Machine Language
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect2"> HyperText Markup Logic
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q1" id="incorrect3"> HighText Markup Language
+                        </label>
+                    </li>
                 </ul>
             </article>
 
@@ -49,10 +66,26 @@
             <article class="question-column">
                 <h2 class="question-box">Question 2: Which tag is used to create a hyperlink?</h2>
                 <ul class="answers-list">
-                    <li>&lt;a&gt;</li>
-                    <li>&lt;link&gt;</li>
-                    <li>&lt;href&gt;</li>
-                    <li>&lt;hyperlink&gt;</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="correct2"> &lt;a&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect4"> &lt;link&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect5"> &lt;href&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q2" id="incorrect6"> &lt;hyperlink&gt;
+                        </label>
+                    </li>
                 </ul>
             </article>
 
@@ -60,15 +93,88 @@
             <article class="question-column">
                 <h2 class="question-box">Question 3: What is the correct HTML element for the largest heading?</h2>
                 <ul class="answers-list">
-                    <li>&lt;h1&gt;</li>
-                    <li>&lt;heading&gt;</li>
-                    <li>&lt;h6&gt;</li>
-                    <li>&lt;header&gt;</li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="correct3"> &lt;h1&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect7"> &lt;heading&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect8"> &lt;h6&gt;
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="q3" id="incorrect9"> &lt;header&gt;
+                        </label>
+                    </li>
                 </ul>
             </article>
-
         </div>
+        <button onClick="checkAnswer()">Submit</button>
     </main>
+
+    <script>
+        function checkAnswer() {
+            //Checks all labels for the radio buttons
+            const labels = document.querySelectorAll("label");
+            labels.forEach(label => {
+                label.style.color = "";
+            });
+
+
+            var score = 0;
+            //Checks selection for Question 1
+            if (document.getElementById('correct1').checked) {
+                document.getElementById('correct1').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect1').checked) {
+                    document.getElementById('incorrect1').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect2').checked) {
+                    document.getElementById('incorrect2').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect3').checked) {
+                    document.getElementById('incorrect3').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 2
+            if (document.getElementById('correct2').checked) {
+                document.getElementById('correct2').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect4').checked) {
+                    document.getElementById('incorrect4').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect5').checked) {
+                    document.getElementById('incorrect5').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect6').checked) {
+                    document.getElementById('incorrect6').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 3
+            if (document.getElementById('correct3').checked) {
+                document.getElementById('correct3').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect7').checked) {
+                    document.getElementById('incorrect7').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect8').checked) {
+                    document.getElementById('incorrect8').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect9').checked) {
+                    document.getElementById('incorrect9').parentElement.style.color = "red";
+                }
+            }
+        }
+    </script>
 
     <!-- Footer section with the company logo and copyright information -->
     <footer>

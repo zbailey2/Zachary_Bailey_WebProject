@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Practice CSS basics with these interactive questions on the syntax and purpose of the language, and how to change and control these specific elements. ">
+    <meta name="description"
+        content="Practice CSS basics with these interactive questions on the syntax and purpose of the language, and how to change and control these specific elements. ">
 
 
     <!-- Title of the webpage -->
@@ -33,15 +34,14 @@
     <!-- Main content section for the CSS practice questions -->
     <main class="questions-container">
         <div class="question-row">
-
             <!-- First question about CSS -->
             <article class="question-column">
                 <h2 class="question-box">Question 1: What does CSS stand for?</h2>
                 <ul class="answers-list">
-                    <li>Cascading Style Sheets</li>
-                    <li>Computer Style Sheets</li>
-                    <li>Colorful Style Sheets</li>
-                    <li>Cascading Style Script</li>
+                    <li><label><input type="radio" name="q1" id="correct1"> Cascading Style Sheets</label></li>
+                    <li><label><input type="radio" name="q1" id="incorrect1"> Computer Style Sheets</label></li>
+                    <li><label><input type="radio" name="q1" id="incorrect2"> Colorful Style Sheets</label></li>
+                    <li><label><input type="radio" name="q1" id="incorrect3"> Cascading Style Script</label></li>
                 </ul>
             </article>
 
@@ -49,10 +49,10 @@
             <article class="question-column">
                 <h2 class="question-box">Question 2: How do you select an element with the id "header"?</h2>
                 <ul class="answers-list">
-                    <li>#header</li>
-                    <li>.header</li>
-                    <li>header</li>
-                    <li>*header</li>
+                    <li><label><input type="radio" name="q2" id="correct2"> #header</label></li>
+                    <li><label><input type="radio" name="q2" id="incorrect4"> .header</label></li>
+                    <li><label><input type="radio" name="q2" id="incorrect5"> header</label></li>
+                    <li><label><input type="radio" name="q2" id="incorrect6">*header</label></li>
                 </ul>
             </article>
 
@@ -60,15 +60,72 @@
             <article class="question-column">
                 <h2 class="question-box">Question 3: Which property is used to change the text color?</h2>
                 <ul class="answers-list">
-                    <li>color</li>
-                    <li>text-color</li>
-                    <li>font-color</li>
-                    <li>background-color</li>
+                    <li><label><input type="radio" name="q3" id="correct3"> color</label></li>
+                    <li><label><input type="radio" name="q3" id="incorrect7"> text-color</label></li>
+                    <li><label><input type="radio" name="q3" id="incorrect8"> font-color</label></li>
+                    <li><label><input type="radio" name="q3" id="incorrect9"> background-color</label></li>
                 </ul>
             </article>
-
         </div>
+        <button onClick="checkAnswer()">Submit</button>
     </main>
+
+    <script>
+        function checkAnswer() {
+            //Checks all labels for the radio buttons
+            const labels = document.querySelectorAll("label");
+            labels.forEach(label => {
+                label.style.color = "";
+            });
+
+
+            var score = 0;
+            //Checks selection for Question 1
+            if (document.getElementById('correct1').checked) {
+                document.getElementById('correct1').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect1').checked) {
+                    document.getElementById('incorrect1').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect2').checked) {
+                    document.getElementById('incorrect2').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect3').checked) {
+                    document.getElementById('incorrect3').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 2
+            if (document.getElementById('correct2').checked) {
+                document.getElementById('correct2').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect4').checked) {
+                    document.getElementById('incorrect4').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect5').checked) {
+                    document.getElementById('incorrect5').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect6').checked) {
+                    document.getElementById('incorrect6').parentElement.style.color = "red";
+                }
+            }
+
+            //Checks selection for Question 3
+            if (document.getElementById('correct3').checked) {
+                document.getElementById('correct3').parentElement.style.color = "green"
+            } else {
+                if (document.getElementById('incorrect7').checked) {
+                    document.getElementById('incorrect7').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect8').checked) {
+                    document.getElementById('incorrect8').parentElement.style.color = "red";
+                }
+                if (document.getElementById('incorrect9').checked) {
+                    document.getElementById('incorrect9').parentElement.style.color = "red";
+                }
+            }
+        }
+    </script>
 
     <!-- Footer section with the company logo and copyright information -->
     <footer>
